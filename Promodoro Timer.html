@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="theme-pomodoro">
+    <div class="container" id="app">
+        <div class="modes">
+            <button class="active" onclick="setMode('pomodoro')">Pomodoro</button>
+            <button onclick="setMode('short')">Short Break</button>
+            <button onclick="setMode('long')">Long Break</button>
+        </div>
+
+        <div id="display">25:00</div>
+        <button id="stopBtn" onclick="stopTimer()">STOP</button>
+        <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+    </div>
+
+
+</body>
+
+</html>
